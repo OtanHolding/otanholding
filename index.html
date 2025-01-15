@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning Platform</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  
+</head>
+<body>
+  <header>
+    <div class="header-div">
+        <div class="logo">
+            <img src="logod.png" alt="" class="logo-img">
+        </div>
+        <div class="menu-btn_div">
+            <div class="menu-btn_div">
+                <button class="menu-btn" onclick="toggleMenu()">☰</button>
+            </div>
+            <div class="menu">
+                <div class="header-menu">
+                    <img src="https://7vetrov.net/wp-content/plugins/multitool-swf/assets/img/placeholders/placeholder-face.png" alt="">
+                </div>
+                <button class="close-btn" onclick="toggleMenu()">✖</button>
+                <div class="menu-link_div">
+                    <i class="fas fa-home"></i>
+                    <a href="#info-main" class="menu-link" onclick="scrollToSection('info-main')">Бастапқы бет</a>
+                </div>
+                <div class="menu-link_div">
+                    <i class="fas fa-info"></i>
+                    <a href="#info-company" class="menu-link" onclick="scrollToSection('info-company')">Толық ақпарат</a>
+                </div>
+                <div class="menu-link_div">
+                    <i class="fas fa-book"></i>
+                    <a href="#playlist" class="menu-link" onclick="scrollToSection('playlist')">Сабақтар</a>
+                </div>
+                <div class="menu-link_div">
+                    <i class="fas fa-phone"></i>
+                    <a href="#footer" class="menu-link">Байланыс</a>
+                </div>
+                <div class="menu-link_div share">
+                    <p></p>
+                    <p>Share</p>
+                    
+                </div>
+                <div class="menu-link_div">
+                    <i class="fab fa-instagram"></i>
+                    <a href="https://www.instagram.com/kaz_trade.kz" class="menu-link" target="_blank">Instagram</a>
+                </div>
+
+                
+
+
+
+
+
+            </div>
+            <div class="overlay" onclick="toggleMenu()"></div>    
+        </div>
+    </div>
+  </header>
+
+  <main>
+    
+    <section class="main-videos" id="info-main">
+      <div class="text-content">
+        <h2>Отан Холдинг</h2>
+        <p class="under-title_h3">ОТАНДЫҚ КОСМЕТИКА | БАД | ВИТАМИН ӨНДІРІСІ</p>
+        <p class="under-title_p">Біз табиғи тағамдық қоспалар, витаминдер және косметика өндірісінде 10 жылдан астам тәжірибесі бар Қазақстандық компаниямыз. Осы уақыт ішінде біз жоғары сапалы өнімдерді ұсынатын 50-ден астам табысты компаниялардың сенімді серіктесіне айналдық.</p>
+      </div>
+
+      <div class="aboutus">
+        <div class="container-div">
+          <img style="width: 90px; height: 90px; border-radius: 0px;" src="https://static.tildacdn.com/tild6563-3132-4530-b532-343332363333/img_451711.png" alt="">
+          <h3>Миссия</h3>
+          <p>Біздің миссиямыз - дененің, ақыл-ойдың және рухтың үйлесіміне сапарында барлығына қолдау көрсету арқылы әл-ауқатқа саналы көзқарасты шабыттандыру.</p>
+          
+          <button onclick="toggleUnblockText(this)" class="btn1"><i class="fas fa-arrow-right"></i> Толық ақпарат</button>
+          <p class="unblock-text">&nbsp;&nbsp;«Біз денсаулықты сақтау және аурудың алдын алу үшін қауіпсіз, тиімді және ғылыми дәлелденген шешімдерді ұсына отырып, адамдардың өмір сүру сапасын жақсартуға тырысамыз. Біздің миссиямыз – әрбір адамға дене, ақыл және рух үйлесімділігіне қолдау көрсету арқылы әл-ауқатқа саналы көзқарасты шабыттандыру».<br></p>
+        </div>
+        <div class="container-div">
+          <img style="width: 90px; height: 90px; border-radius: 0px;" src="https://st44.stpulscen.ru/images/localized/021/876/740_original.png" alt="">
+          <h3>Качество</h3>
+          <p>Өнім сапасы - біздің басты басымдылығымыз. Әрбір тағамдық қоспа заманауи ғылыми зерттеулер негізінде әзірленіп, өндірістің барлық кезеңдерінде қатаң бақылаудан өтеді.</p>
+          
+          <button onclick="toggleUnblockText(this)" class="btn2"><i class="fas fa-arrow-right"></i> Толық ақпарат</button>
+          <p class="unblock-text">
+            •	&nbsp;&nbsp;Шикізатты таңдау: Біз тек сенімді жеткізушілердің табиғи және экологиялық таза ингредиенттерін пайдаланамыз, бұл әрбір компоненттің қауіпсіздігі мен тиімділігіне кепілдік береді.<br>
+            •	&nbsp;&nbsp;Өндіріс стандарттары: Өндіріс GMP (Good Manufacturing Practice) және ISO сияқты халықаралық сапа стандарттарына сәйкес жүзеге асырылады, бұл сенімділік пен сәйкестіктің жоғары деңгейін қамтамасыз етеді.<br>
+            •	&nbsp;&nbsp;Сапаны бақылау: Барлық өнімдер тазалық, ингредиент белсенділігі және зиянды қоспалардың жоқтығы үшін бірнеше сынақтардан өтеді.<br>
+            •	&nbsp;&nbsp;Ғылыми негізі: БАД формулаларын тамақтану, медицина және фармацевтика салаларының мамандары әзірлейді және олардың тиімділігі ғылыми зерттеулермен дәлелденді.<br>
+            •	&nbsp;&nbsp;Жауапкершілік: Әрбір тұтынушы өз таңдауына сенімді болуы үшін біз өнімдеріміздің құрамы, шикізат көздері және қасиеттері туралы ақпаратты ашық түрде береміз.<br><br>
+            &nbsp;&nbsp;Біздің мақсатымыз – сіз сенуге болатын өнімдерді жасау және алдағы жылдар бойы салауатты және белсенді өмір салтын сақтауға көмектесу.
+          </p>
+        </div>
+        <div class="container-div">
+          <img style="width: 90px; border-radius: 0px;" src="https://eushipments.com/wp-content/uploads/2019/09/081-customer-service-1.svg" alt="">
+          <h3>Сервис</h3>
+          <p>Біз клиентпен өзара іс-қимылдың әрбір кезеңінде ыңғайлылықты, ашықтықты және қолдауды қамтамасыз ететін ыңғайлы және сенімді қызметті құруға тырысамыз.</p>
+          
+          <button onclick="toggleUnblockText(this)" class="btn3"><i class="fas fa-arrow-right"></i> Толық ақпарат</button>
+          <p class="unblock-text">
+            • &nbsp;&nbsp;Сарапшылардың кеңестері: Біз диеталық қоспаларды таңдау, оларды пайдалану және басқа өнімдермен біріктіру бойынша тегін сараптамалық кеңес береміз.<br>
+            •	&nbsp;&nbsp;Жеке тәсіл: Біз сіздің денеңіздің ерекшеліктерін, өмір салтын және денсаулығыңызды жақсарту мақсаттарын ескеретін шешімдерді таңдауға көмектесеміз.<br>
+            •	&nbsp;&nbsp;Ыңғайлы жеткізу: Біз қолайлы уақыт пен алу әдісін таңдау мүмкіндігімен еліміздің кез келген нүктесіне өнімді жылдам және қауіпсіз жеткізуді қамтамасыз етеміз.<br>
+            •	&nbsp;&nbsp;Тапсырыс беру оңай: интуитивті веб-сайт пен мобильді қолданба тапсырыс беруді, ұсыныстарды алуды және жеткізіліміңізді бақылауды жеңілдетеді.<br>
+            •	&nbsp;&nbsp;Адалдық бағдарламасы: Біз тұрақты клиенттеріміз үшін бонустар, жеңілдіктер және арнайы ұсыныстар жүйесін әзірлеп жатырмыз.<br>
+            •	&nbsp;&nbsp;24/7 қолдау көрсету: Біздің қолдау көрсету тобы әрқашан сұрақтарға жауап беруге, тапсырыс беруге және туындаған мәселелерді шешуге дайын.<br>
+            •	&nbsp;&nbsp;Білім беру мазмұны: Біз тұтынушыларға өз денсаулығына қалай қарау керектігін жақсырақ түсінуге көмектесетін мақалаларды, бейнелерді және нұсқауларды жариялаймыз.<br>
+            •	&nbsp;&nbsp;Сапа кепілдігі: сәйкес келмеген немесе қанағаттанбаған жағдайда өнімді қайтару мүмкіндігін береміз.<br><br>
+            &nbsp;&nbsp;Біз сіздің өнімдерді таңдауда өзіңізді сенімді сезінуіңіз және денсаулығыңыз үшін барынша пайда алуыңыз үшін қолдан келгеннің бәрін жасаймыз.
+          </p>
+        </div>
+      </div>
+
+      
+      <div class="videos-container" id="info-company">
+        <p class="video-title_h3">Отан Холдинг</p>
+        <iframe width="560" height="200" src="https://www.youtube.com/embed/lMrdLKy6L8Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+        <p class="video-title_h3">Өндіріс ошағы KazTrade</p>
+        <iframe width="560" height="200" src="https://www.youtube.com/embed/lMrdLKy6L8Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+        <p class="video-title_h3">Balalife тарихы</p>
+        <iframe width="560" height="200" src="https://www.youtube.com/embed/lMrdLKy6L8Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </section>
+      <div class="carousel">
+        <div class="carousel-track">
+            <div class="carousel-item" style="background-image: url('https://i.imghippo.com/files/ZTQk7596v.jpg');">
+                <h3>Сайынқызы Шынар</h3>
+                <p>Оснаватель Отан Холдинг</p>
+                <a href="https://www.instagram.com/shynar_sayin">@shynar_sayin</a>
+            </div>
+            <div class="carousel-item" style="background-image: url('https://i.imghippo.com/files/uA6236vt.png');">
+                <h3>Мәлік Маяузов</h3>
+                <p>Оснаватель Отан Холдинг</p>
+                <a href="https://www.instagram.com/malik__nurgeldiuly">@malik_nurgeldiuly</a>
+            </div>
+            <div class="carousel-item" style="background-image: url('https://i.imghippo.com/files/jcB5327k.png');">
+                <h3>Дәурен Болатұлы</h3>
+                <p>Директор Balalife</p>
+                <a href="https://www.instagram.com/dbolatovish">@dbolatovish</a>
+            </div>
+        </div>
+    </div>
+    
+
+    <section class="playlist" id="playlist">
+      <h2>Видео сабақтар</h2>
+      <p>Бұл сабақтарда сатылымды арттыру, өнімділікті жоғарылату және өзін-өзі мотивациялау әдістері қамтылған.</p>
+      <ul>
+        <li>
+          <button class="playlist-btn" onclick="playVideo('g3caUF1ZR4c')"><span>1. Сабақ:</span> Кіріспе</button>
+        </li>
+          <button class="playlist-btn" onclick="playVideo('ZU0_5KMaMM4')"><span>2. Сабақ:</span> AmoCRM платформасымен танысу</button>
+        </li>
+        <li>
+          <button class="playlist-btn" onclick="playVideo('dQw4w9WgXcQ')"><span>3. Сабақ:</span> Воронка продаж</button>
+        </li>
+        <li>
+          <button class="playlist-btn" onclick="playVideo('tgbNymZ7vqY')"><span>4. Сабақ:</span> Самомативация</button>
+        </li>
+        <li>
+          <button class="playlist-btn" onclick="playVideo('kJQP7kiw5Fk')"><span>5. Сабақ:</span> Сату техникасы</button>
+        </li>
+      </ul>      
+      <div class="playlist-player">
+        <iframe id="playlist-video" width="100%" height="200" src="https://www.youtube.com/embed/g3caUF1ZR4c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>      
+    </section>
+
+    <section>
+      <div class="download-section">
+        <h2>Теориялық сабақтар</h2>
+        <p>Сату стратегияларын және сату тиімділігін арттыруға арналған ең жақсы тәжірибелерді тереңірек қарау үшін файлдарды жүктеп алыңыз.</p>
+        
+        <a href="material.pdf" download="gormon_rosta_prodazh.pdf" class="download-btn">
+          <i style="text-align: left;" class="fas fa-file-pdf"></i>
+          <h5>Сату стратегиясы</h5>
+        </a>
+        <a href="material.docx" download="script_prodazh.docx" class="download-btn-2">
+          <i style="text-align: left;" class="fas fa-file-word"></i>
+          <h5>Сауда скрипты</h5>
+        </a>
+      </div>
+      
+    </section>
+  </main>
+
+  <footer id="footer">
+    <div class="footer-div">
+      <h3>OTAN HOLDING</h3>
+      <p class="footer-info_p">Қазақстан бойынша отандық өнімдерді өндіру саласы бойынша үздіктердің бірі</p>
+      <div class="footer-info">
+          <div class="footer-info_div">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>Алматы қ. Наурызбай ауданы, Нурпеисова көшесі №269</p>
+          </div>
+          <div class="footer-info_div">
+              <i class="fas fa-envelope"></i>
+              <p>otanholding2023@gmail.com</p>
+          </div>
+          <div class="footer-info_div">
+              <i class="fas fa-phone"></i>
+              <p>+7(775)-503-6481</p>
+          </div>
+
+          <p style="margin-top: 30px;">Әлеуметтік желілердегі парақшаларымыз:</p>
+          <div class="footer-info_div">
+              <a href="https://www.instagram.com/kaz_trade.kz" class="footer-i" target="_blank">
+                  <i class="fab fa-instagram footer-2_i"></i>
+              </a>
+              <a href="https://wa.me/77755036481" class="footer-i" style="margin-left: 10px;" target="_blank">
+                  <i class="fab fa-whatsapp footer-2_i"></i>
+              </a>
+          </div>
+      </div>
+    </div>
+    <div class="footer-p">
+      <p>© 2025 OtanHolding жеке мамандарына әдістемелік мақсатындағы платформа.</p>
+    </div>
+</footer>
+
+<script>
+  function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    section.scrollIntoView({ behavior: 'smooth' });
+    toggleMenu(); // Закрытие меню
+  }
+
+  function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    const overlay = document.querySelector('.overlay');
+
+    menu.classList.toggle('menu-open');
+    overlay.classList.toggle('overlay-active');
+  }
+
+  document.querySelector('.overlay').addEventListener('click', () => {
+    const menu = document.querySelector('.menu');
+    const overlay = document.querySelector('.overlay');
+
+    menu.classList.remove('menu-open');
+    overlay.classList.remove('overlay-active');
+  });
+
+  function playVideo(videoId) {
+    const iframe = document.getElementById('playlist-video');
+    iframe.src = `https://www.youtube.com/embed/${videoId}`;
+  }
+
+    // Функция для показа/скрытия текста
+  function toggleUnblockText(button) {
+    const container = button.closest('.container-div'); // Находим родительский контейнер
+    const text = container.querySelector('.unblock-text'); // Ищем текст в контейнере
+
+    // Переключаем класс активности
+    text.classList.toggle('active');
+  }
+
+  // Функция для скрытия текста при нажатии на сам текст
+  document.addEventListener('click', (event) => {
+    if (event.target.classList.contains('unblock-text')) {
+      event.target.classList.remove('active');
+    }
+  });
+
+
+
+</script>
+<script>
+  function moveCarouselAuto(carouselId) {
+    const carousel = document.getElementById(carouselId);
+    const track = carousel.querySelector('.carousel-track');
+    const items = carousel.querySelectorAll('.carousel-item');
+    const itemWidth = items[0].offsetWidth;
+    
+    let currentIndex = 0;
+
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % items.length;
+      const newTransform = -currentIndex * itemWidth;
+      track.style.transform = `translateX(${newTransform}px)`;
+    }, 3000); // Меняет каждый 2 секунды
+  }
+
+  // Автоматически запускаем карусель для всех трех
+  moveCarouselAuto('carousel1');
+  moveCarouselAuto('carousel2');
+  moveCarouselAuto('carousel3');
+
+</script>
+</body>
+</html>
