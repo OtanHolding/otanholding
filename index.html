@@ -6,7 +6,541 @@
   <title>Learning Platform</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth; 
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.header-div{
+  display: grid;
+  grid-template-columns: 60% 40%;
+  width: 100%;
+  padding: 15px;
+  margin: 0px;
+}
+
+
+.logo-img{
+  width: 100%;
+  margin-top: 5px;
+}
+.menu {
+  position: fixed; 
+  top: 0;
+  left: -100%; 
+  width: 80%; 
+  height: 100%; 
+  background: white;
+  color: #004346;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  justify-content: flex-start;
+  padding: 0px;
+  transition: left 0.3s ease-in-out; 
+  z-index: 1000;
+}
+.header-menu{
+  width: 100%;
+  min-height: 100px;
+  background-image: url(https://marketing2connect.com/wp-content/uploads/2020/05/BG_image_5.jpg);
+  background-size: cover;
+  border-radius: 0px 0px 10px 10px;
+}
+.header-menu img{
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  position: absolute;
+  top: 45px;
+  box-shadow: 0px 3px 3px #ccc;
+  left: 40px;
+  z-index: 1000;
+}
+
+.menu-open {
+  left: 0; 
+}
+
+.menu-link {
+  color: #004346;
+  text-decoration: none;
+  font-size: 15px;
+}
+.menu-link a{
+  width: 100%;
+}
+.menu-link a:hover{
+   opacity: 0.7;
+}
+.share{
+  border-top: 1px solid #ccc;
+  border-width: 0.1cap;
   
+}
+.menu-link_div{
+  display: grid;
+  grid-template-columns: 20% 80%;
+  width: 80%;
+  margin: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 10px;
+  align-items: center;
+}
+.menu-link_div i{
+  text-align: center;
+}
+
+.menu-link:hover {
+  color: #007BFF;
+}
+
+.close-btn {
+  align-self: flex-end; 
+  background: none;
+  border: none;
+  color: rgba(0, 0, 0, 0);
+  font-size: 16px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+
+.close-btn:hover {
+  color: #007BFF;
+}
+
+.menu-btn {
+  background: linear-gradient(45deg, #87d384, #1e8e3e); 
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 0px 20px 3px;
+  cursor: pointer;
+  float: right;
+  box-shadow: 0px 2px 4px #c7c7c7;
+}
+
+.menu-btn:hover {
+  background-color: #0056b3;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 999;
+  display: none;
+}
+
+.overlay-active {
+  display: block; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main {
+  max-width: 1200px;
+  margin: 10px auto;
+  padding: 25px;
+  margin-top: 0px;
+}
+
+main h2 {
+  text-align: center;
+  margin-bottom: 0px;
+}
+.text-content{
+  margin-bottom: 20px;
+}
+
+.under-title_h3{
+  text-align: center;
+  font-size: 15px;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #74b472;
+}
+
+.under-title_p{
+  text-align: center;
+  font-size: 12px;
+  margin-top: 10px;
+  color: darkslategray;
+}
+
+.video-title_h3{
+  text-align: center;
+  font-size: 17px;
+  width: 100%;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #74b472;
+}
+
+.playlist-btn{
+  background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.videos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.videos-container video {
+  flex: 1 1 calc(33.333% - 10px);
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.playlist {
+  margin-top: 20px;
+}
+
+.playlist ul {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.playlist ul li {
+  margin: 5px 0;
+}
+
+.playlist p{
+  text-align: center;
+  color: rgb(84, 97, 97);
+  font-size: 13px;
+  margin: auto;
+  width: 90%;
+  margin-bottom: 30px;
+}
+iframe{
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 3px 3px #b1b1b1;
+}
+.playlist h2{
+  margin-top: 50px;
+}
+.playlist button {
+  padding: 10px 15px;
+  background: linear-gradient(45deg, #69bb66, #1e8e3e); 
+  color: white;
+  text-align: left;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 0px solid #69bb66;
+  margin-bottom: 5px;
+  box-shadow: 0px 0px 3px #e6e6e6;
+}
+
+.playlist button:hover {
+  background: linear-gradient(45deg, #43aed8, #04348f); 
+  color: white; 
+  border-radius: 5px;
+  overflow: hidden; 
+}
+button span{
+  font-weight: bold;
+}
+
+.playlist-player {
+  margin-top: 20px;
+}
+
+.playlist-player video {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  margin-top: 20px;
+  padding: 30px 0px;
+  background: linear-gradient(-5deg, #2a5769, #113c5f); 
+  color: #fff;
+}
+.footer-div{
+  padding: 0px 35px;
+}
+.footer-p{
+  text-align: center;
+  color: #a5a4a4;
+  font-size: 10px;
+  margin-top: 10px;
+  padding-top: 20px;
+  border-top: 1px solid rgb(131, 131, 131);
+}
+.footer-p p{
+  width: 80%;
+  margin: auto;
+}
+.footer-info_div{
+  display: grid;
+  grid-template-columns: 10% 90%;
+}
+
+footer p{
+  color: #d8d8d8;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.footer-info_p{
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.footer-info_div a {
+  color: #fff;
+  margin-right: 10px;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+.footer-2_i{
+  font-size: 35px;
+}
+
+
+.footer-info_div a:hover {
+  color: #69bb66; 
+}
+.social{
+  color: #fff;
+  margin-right: 10px;
+  font-size: 20px;
+  transition: color 0.3s ease;
+  color: #004346;
+  text-decoration: none;
+}
+
+
+.aboutus{
+  display: grid;
+}
+.container-div{
+  background-color: white;
+  align-self: center;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.container-div img{
+  margin: 0px;
+}
+.container-div p{
+  font-size: 12px;
+  color: #727272;
+  width: 90%;
+  margin: auto;
+}
+.container-div h3{
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.unblock-text {
+  display: none;
+}
+
+.unblock-text.active {
+  display: block;
+  padding-top: 10px;
+  text-align: left;
+
+}
+
+
+.btn1{
+  background-color: rgb(0,0,0,0);
+  border: 0px;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 15px;
+  color: #ffbe01;
+}
+.btn2{
+  background-color: rgb(0,0,0,0);
+  border: 0px;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 15px;
+  color: #0a9721;
+}
+.btn3{
+  background-color: rgb(0,0,0,0);
+  border: 0px;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 15px;
+  color: #356595;
+}
+.btn3:hover{
+  opacity: 0.5;
+}
+
+.download-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.download-btn {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  align-items: center;
+  padding: 10px 20px;
+  color: white;
+  margin-bottom: 10px;
+  background: linear-gradient(45deg, #f32c2c, #5f1111); 
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+}
+.download-btn-2{
+  display: grid;
+  grid-template-columns: 10% 90%;
+  align-items: center;
+  padding: 10px 20px;
+  color: white;
+  margin-bottom: 10px;
+  background: linear-gradient(45deg, #2c89f3, #313fbd); 
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.download-btn i {
+  margin-right: 10px;
+}
+
+.download-btn:hover {
+  background-color: #0056b3;
+}
+.download-section p{
+  text-align: center;
+  color: rgb(84, 97, 97);
+  font-size: 13px;
+  margin: auto;
+  width: 90%;
+  margin-bottom: 30px;
+}
+
+
+.carousel {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 30px;
+  margin-left: 3%;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
+  animation: slide 15s infinite;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 400px;
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+  padding: 20px 0px;
+  box-sizing: border-box;
+}
+
+.carousel-item h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.carousel-item p {
+  font-size: 1rem;
+  max-width: 80%;
+}
+
+.carousel-item a {
+ text-decoration: none;
+ color: #2bdfff;
+}
+
+.carousel-item a:hover {
+  color: #fff;
+}
+
+@keyframes slide {
+  0%, 20% { transform: translateX(0); }
+  33.33%, 53.33% { transform: translateX(-100%); }
+  66.66%, 86.66% { transform: translateX(-200%); }
+  100% { transform: translateX(0); }
+}
+  </style>
 </head>
 <body>
   <header>
